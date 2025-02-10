@@ -4,7 +4,7 @@ JZ /200 ; termina o programa se n = 0
 SC /300 ;
 HM /a00 
 
-@ /200
+@ /f00
   HM /a00
 
 @ /300
