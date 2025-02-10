@@ -1,9 +1,9 @@
 LD N ; ac = n
-JZ ZERO ; termina o programa se n = 0
+JZ SE_ZERO ; termina o programa se n = 0
 SC SUBROTINA ;
 HM /0101 
 
-ZERO:
+SE_ZERO:
   HM /a00
 
 SUBROTINA:
