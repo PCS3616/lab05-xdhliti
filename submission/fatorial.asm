@@ -1,6 +1,5 @@
-@ /000
 LD N ; ac = n
-JZ /200 ; termina o programa se n = 0
+JZ /a00 ; termina o programa se n = 0
 SC /300 ;
 HM /a00 
 
@@ -17,7 +16,7 @@ HM /a00
   JP /300
 
 @ /400
-  RS 
+  RS /300
 
 
 @ /100
