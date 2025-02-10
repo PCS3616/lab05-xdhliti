@@ -1,8 +1,8 @@
 @ /000
 LD N ; ac = n
-JZ /0200 ; termina o programa se n = 0
-SC /0300 ;
-HM /0101 
+JZ /200 ; termina o programa se n = 0
+SC /300 ;
+HM /a00 
 
 @ /200
   HM /a00
@@ -13,15 +13,15 @@ HM /0101
   MM RES ; RES = 4 || res = 12 || 24 
   LD i ; AC = i = 4 || ac = 3 || ac = 2
   SB CTE ; AC = AC - 1 = 3 || ac = 2 || ac = 1
-  JZ /0400 
-  JP /0300
+  JZ /400 
+  JP /300
 
 @ /400
-  RS /0300
+  RS /300
 
 
 @ /100
-N K /0004
-RES K /0001
-CTE K /0001
-i K /0001
+N K /004
+RES K /001
+CTE K /001
+i K /001
