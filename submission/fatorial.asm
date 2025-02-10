@@ -1,6 +1,7 @@
-LD N
-JZ ZERO
-SC SUBROTINA
+LD N ; ac = n
+JZ ZERO ; termina o programa se n = 0
+SC SUBROTINA ;
+HM /0101 
 
 ZERO:
   HM /a00
@@ -11,8 +12,10 @@ SUBROTINA:
   MM RES
   LD i
   SB CTE
-  JZ ZERO
+  JZ FIM_SB
   JP SUBROTINA
+FIM_SB:
+  RS SUBROTINA
 
 
 @ /0100
