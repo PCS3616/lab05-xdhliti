@@ -1,21 +1,22 @@
+@ /0000
 LD N ; ac = n
-JZ SE_ZERO ; termina o programa se n = 0
-SC SUBROTINA ;
+JZ /0200 ; termina o programa se n = 0
+SC /0300 ;
 HM /0101 
 
-SE_ZERO:
+@ /0200
   HM /a00
 
-SUBROTINA:
+@ /0300
   MM i
   ML RES
   MM RES
   LD i
   SB CTE
-  JZ FIM_SB
-  JP SUBROTINA
-FIM_SB:
-  RS SUBROTINA
+  JZ /0400
+  JP /0300
+@ /0400
+  RS /0300
 
 
 @ /0100
