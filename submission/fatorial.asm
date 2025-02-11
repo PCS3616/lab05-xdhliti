@@ -1,4 +1,3 @@
-@ /0000
 ; JZ /0f00 ; termina o programa se n = 0 || 002
 SC /0300 ; 004
 HM /0a00 ; 006
