@@ -8,7 +8,6 @@ HM =0 ; 006
 N K =4
 RES K =1
 AUX K =1
-FAT K =1
 CTE K =1
 
 @ /200
@@ -18,8 +17,12 @@ ML RES
 MM RES  
 LD AUX 
 SB CTE 
-JZ /210
+JZ /400
 JP /202
 RS /200 
+
+
+@ /400
+RS /200
 
 
