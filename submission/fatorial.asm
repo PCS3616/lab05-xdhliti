@@ -2,6 +2,8 @@
 LD N ; ac <= n  000
 JZ /006
 SC /200 ; 004
+LD FAT
+MM RES ; res <= fat 006
 HM =0 ; 006
 
 @ /100
@@ -20,8 +22,6 @@ LD AUX ; AC = i = 4 || ac = 3 || ac = 2
 SB CTE ; AC = AC - 1 = 3 || ac = 2 || ac = 1
 JZ /210
 JP /202
-LD FAT
-MM RES ; res <= fat 006
 RS /200 ; 030e
 
 
