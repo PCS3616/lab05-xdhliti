@@ -2,7 +2,7 @@
 LD base
 MM ptr
 LD square
-MM @ ptr
+MM [ptr]
 SC /200
 HM /004
 
@@ -13,7 +13,7 @@ ML two
 AD one
 AD square
 MM square 
-MM @ ptr
+MM [ptr]
 LD ptr 
 AD two
 MM ptr
