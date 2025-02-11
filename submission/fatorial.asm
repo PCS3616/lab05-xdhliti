@@ -8,15 +8,15 @@ HM /a00 ; 006
 N K /004
 RES K /001
 CTE K /001
-it N
+IT K /001
 
 
 @ /300
 ;JP /004 
-MM it ; i = ac = 4 || i = AC = 3 || i = ac = 2 
+MM IT ; i = ac = 4 || i = AC = 3 || i = ac = 2 
 ML RES ; AC = AC*RES = 4 || AC = 3*4 || AC = 4*3*2
 MM RES ; RES <= AC || RES = 4 || res = 12 || 24 
-LD it ; AC = i = 4 || ac = 3 || ac = 2
+LD IT ; AC = i = 4 || ac = 3 || ac = 2
 SB CTE ; AC = AC - 1 = 3 || ac = 2 || ac = 1
 JZ /400 
 JP /300
