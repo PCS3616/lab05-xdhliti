@@ -6,15 +6,18 @@ HM /004 ; termina o programa
 
 @ /200
 JP /000
-LD mem
-AD two
-AD x ; AC = 9<mem> (concateno a mem com a instru equivalente a gaurdar MM mem)
-MM /500
 LD i ; AC = i 
 ML two ; AC = 2*AC
 AD one ; AC += 1
 AD aux ; AC = AC + aux
 MM aux ; aux = AC = 2i + 1
+LD mem
+AD two ;AC = mem = mem + 2
+MM mem 
+AD x ; AC = 9<mem> 
+MM /218 
+LD aux
+k /0000  ; /218
 LD i 
 AD one ; AC = (AC = 1) + 1
 MM i ; i = AC
@@ -27,6 +30,7 @@ RS /200
 
 @ /500
 k /0000
+RS /500
 
 @ /100
 k /000
@@ -40,7 +44,6 @@ mem k /100 ; ponteiro que comeca em 0100
 one k =1 ;pra somar 
 two k =2 ;pra multiplicar
 n k =63
-base k /0100
 x k /9000
 
 
