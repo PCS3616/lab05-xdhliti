@@ -2,6 +2,8 @@
 LD N ; ac <= n  000
 JZ /0f00 ; termina o programa se n = 0 || 002
 SC /0300 ; 004
+LD FAT
+MM RES ; res <= fat 006
 HM /0a00 ; 006
 
 
