@@ -1,6 +1,5 @@
-@ /000
-SC /200 ; 004
-HM =0 ; 006
+START SC /200 ; 004
+END HM =0 ; 006
 
 @ /100
 N K =4
@@ -10,7 +9,7 @@ FAT K =1
 CTE K =1
 
 @ /200
-JP /000
+JP START
 LD N ; ac <= n  000
 JZ /20e
 MM AUX ; i = ac = 4 || i = AC = 3 || i = ac = 2 
