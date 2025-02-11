@@ -4,8 +4,12 @@ JZ /f00 ; termina o programa se n = 0 002
 SC /300 ; 004
 HM /a00 ; 006
 
-@ /f00 ; f00
-  HM /a00
+@ /100
+N K /004
+RES K /001
+CTE K /001
+it K /001
+
 
 @ /300
   ; JP /004 
@@ -20,8 +24,5 @@ JP /300
 @ /400
   RS /300
 
-@ /100
-N K /004
-RES K /001
-CTE K /001
-it K /001
+@ /f00 ; f00
+  HM /a00
