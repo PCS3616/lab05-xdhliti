@@ -19,7 +19,7 @@ ML FAT ; AC = AC*RES = 4 || AC = 3*4 || AC = 4*3*2
 MM FAT ; RES <= AC || RES = 4 || res = 12 || 24 
 LD AUX ; AC = i = 4 || ac = 3 || ac = 2
 SB CTE ; AC = AC - 1 = 3 || ac = 2 || ac = 1
-JP /0200
+JP /0202
 RS /0200 ; 030e
 
 ; @ /0400
