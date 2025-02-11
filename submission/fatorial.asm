@@ -14,6 +14,7 @@ HM /a00 ; 006
   MM RES ; RES <= AC || RES = 4 || res = 12 || 24 
   LD i ; AC = i = 4 || ac = 3 || ac = 2
   SB CTE ; AC = AC - 1 = 3 || ac = 2 || ac = 1
+  MM RES 
   JZ /400 
   JP /300
 
