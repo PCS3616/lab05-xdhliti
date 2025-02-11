@@ -19,7 +19,6 @@ LD AUX
 SB CTE 
 JZ /400
 JP /202
-RS /200 
 
 
 @ /400
