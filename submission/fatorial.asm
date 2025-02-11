@@ -1,10 +1,15 @@
 ; JZ /0f00 ; termina o programa se n = 0 || 002
-SC /0300 ; 004
-HM /0a00 ; 006
+INICIO SC /0300 ; 004
+FIM HM /0a00 ; 006
 
+@ /0100
+N K /0004
+RES K /0001
+AUX K /0001
+CTE K /0001
 
 @ /0300
-; JP /004
+JP INICIO
 LD N ; ac <= n  000 
 JZ /0400 
 MM AUX ; i = ac = 4 || i = AC = 3 || i = ac = 2 
@@ -21,8 +26,3 @@ RS /0300
 ; @ /0f00 ; f00
 ; HM /0a00
 
-@ /0100
-N K /0004
-RES K /0001
-AUX K /0001
-CTE K /0001
