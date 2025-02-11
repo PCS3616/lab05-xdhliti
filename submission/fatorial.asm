@@ -8,7 +8,7 @@ HM /a00 ; 006
 N K /004
 RES K /001
 CTE K /001
-it K /008
+it N
 
 
 @ /300
