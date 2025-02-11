@@ -6,7 +6,7 @@
 ; Como o montador não oferece endereçamento indireto, usamos auto-modificação
 ; de código para alterar dinamicamente o endereço de armazenamento.
 
-@000         ; Início do programa
+@ /000         ; Início do programa
 
     ; --- Inicializações ---
     LD 0          
@@ -74,7 +74,7 @@ STORE:
                ; pelo valor contido em PTR.
 
 ; --- Dados (alocados a partir de 0x300) ---
-@300
+@ /300
 I       K = 0         ; Contador n (inicia em 0)
 SQUARE  K = 0         ; Acumulador do quadrado atual
 ODD     K = 1         ; Valor do próximo número ímpar
